@@ -10,9 +10,11 @@
 
 @interface Person : NSObject {
     
-    NSString *name;
-    NSInteger age;
-    float height;
+    NSString *_name;
+    NSInteger _age;
+    float _height;
 }
+
+- (instancetype)initWithName:(NSString *)name age:(NSInteger)age height:(float)height;
 
 @end

@@ -10,4 +10,19 @@
 
 @implementation Person
 
+- (instancetype)initWithName:(NSString *)name age:(NSInteger)age height:(float)height {
+    
+    self = [super init];
+    
+    if (self) {
+        
+        // 需要添加的特性
+        _name = name;
+        _age = age;
+        _height = height;
+    }
+    
+    return self;
+}
+
 @end
